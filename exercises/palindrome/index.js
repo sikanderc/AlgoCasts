@@ -10,6 +10,10 @@
 function palindrome(str) {
   let reversed = str.split("").reverse().join('')
   return reversed === str
+
+  //not the best way but uses 'every' array helper
+  // let strArr = str.split("")
+  // return strArr.every((char, i) => char === strArr[str.length-(i+1)])
 }
 
 module.exports = palindrome;
