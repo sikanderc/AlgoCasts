@@ -9,6 +9,7 @@ function maxChar(str) {
   let chars = {}
   let max = 0
   let maxChar = ""
+  
   for (let char of str) {
     chars[char] ? chars[char] += 1 : chars[char] = 1
   }
