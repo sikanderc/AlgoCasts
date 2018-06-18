@@ -8,13 +8,23 @@
 // Example:
 //   fib(4) === 3
 
+
+
 function fib(n) {
-  let fibArr =[0,1]
-  for (var i = 0; i < n; i++) {
-    let newNum = fibArr[i] + fibArr[i+1]
-    fibArr.push(newNum)
+  if (n < 2) {
+    return n
   }
-  return fibArr[n]
+
+  return fib(n - 1) + fib(n - 2)
 }
+
+// function fib(n) {
+//   let fibArr =[0,1]
+//   for (var i = 0; i < n; i++) {
+//     let newNum = fibArr[i] + fibArr[i+1]
+//     fibArr.push(newNum)
+//   }
+//   return fibArr[n]
+// }
 
 module.exports = fib;
